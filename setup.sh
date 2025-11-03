@@ -141,7 +141,6 @@ if [ $# -eq 0 ]; then
     exit 1
 fi
 
-python demo.py "$@"
 EOF
 
 chmod +x run.sh
@@ -163,7 +162,7 @@ echo "   ${YELLOW}./run.sh dog.jpg${NC}"
 echo ""
 echo "   Or manually:"
 echo "   ${YELLOW}source venv/bin/activate${NC}"
-echo "   ${YELLOW}python demo.py dog.jpg${NC}"
+echo "   ${YELLOW}python test.py dog.jpg${NC}"
 echo ""
 echo "3. Use your own images:"
 echo "   ${YELLOW}./run.sh /path/to/your/image.jpg${NC}"
